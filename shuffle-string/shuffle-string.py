@@ -64,7 +64,7 @@ def main():
             # Iterate over shuffled strings, write to the file, and print to the console
             for i, shuffled_text in enumerate(shuffled_texts, 1):
                 output_file.write(f"{shuffled_text}\n")
-                print(f"{shuffled_text}\n")
+                print(shuffled_text)
         print(f"{args.count} shuffled strings saved to '{args.output_file}'")
     else:
         # If no output file is specified, simply print the shuffled strings to the console
